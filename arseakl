@@ -12,7 +12,6 @@ for i,g in pairs(RS.Weapons:GetChildren()) do
         changeThis(g,"FireRate",0.011)
         changeThis(g,"Auto",true)
         changeThis(g,"RecoilControl",0)
-        changeThis(g,"Ammo",999)
         -- add more lines to make more changes.
     end
 end
@@ -45,6 +44,14 @@ v.Character.HumanoidRootPart.Transparency = 0.1
 v.Character.HumanoidRootPart.Size = Vector3.new(13,13,13)
  
 end
+end
+
+
+
+while true do
+    game:GetService("Players").LocalPlayer.PlayerGui.GUI.Client.Variables.ammocount.Value = 999
+    game:GetService("Players").LocalPlayer.PlayerGui.GUI.Client.Variables.ammocount2.Value = 999
+task.wait()
 end
 end))
 end
